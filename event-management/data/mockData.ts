@@ -1,0 +1,131 @@
+import { Event, RegisteredEvent, Student } from "@/types";
+
+export const mockStudent: Student = {
+  id: "s001",
+  name: "Arjun Sharma",
+  email: "arjun.sharma@college.edu",
+  department: "Computer Science",
+  year: 3,
+  avatar: "AS",
+  registeredEvents: ["e001", "e003", "e005"],
+};
+
+export const mockEvents: Event[] = [
+  {
+    id: "e001",
+    title: "National Hackathon 2025",
+    description:
+      "Join 500+ coders in a 36-hour intense hackathon. Build innovative solutions for real-world problems. Prizes worth Rs 5 Lakhs up for grabs!",
+    date: "2025-03-25",
+    time: "09:00 AM",
+    location: "Main Auditorium, Block A",
+    category: "Technical",
+    capacity: 200,
+    registered: 156,
+    image: "laptop",
+    status: "upcoming",
+    tags: ["Coding", "Innovation", "Prizes"],
+    organizer: "Dr. Priya Nair",
+  },
+  {
+    id: "e002",
+    title: "Cultural Fest - Utsav 2025",
+    description:
+      "Celebrate diversity through dance, music, drama and art. A three-day extravaganza of cultural performances and competitions.",
+    date: "2025-04-02",
+    time: "10:00 AM",
+    location: "Open Air Theatre",
+    category: "Cultural",
+    capacity: 500,
+    registered: 342,
+    image: "theater",
+    status: "upcoming",
+    tags: ["Dance", "Music", "Drama"],
+    organizer: "Prof. Meena Iyer",
+  },
+  {
+    id: "e003",
+    title: "AI & ML Workshop",
+    description:
+      "Hands-on workshop on Machine Learning fundamentals. Learn from industry experts and get certified. Includes Python, TensorFlow, and real datasets.",
+    date: "2025-03-18",
+    time: "02:00 PM",
+    location: "Lab Complex, Room 301",
+    category: "Workshop",
+    capacity: 60,
+    registered: 58,
+    image: "bot",
+    status: "upcoming",
+    tags: ["AI", "Python", "Certificate"],
+    organizer: "Dr. Kiran Rao",
+  },
+  {
+    id: "e004",
+    title: "Entrepreneurship Summit",
+    description:
+      "Connect with successful entrepreneurs and investors. Pitch your startup ideas and get mentorship. Networking session included.",
+    date: "2025-04-10",
+    time: "11:00 AM",
+    location: "Seminar Hall, Block B",
+    category: "Business",
+    capacity: 150,
+    registered: 89,
+    image: "rocket",
+    status: "upcoming",
+    tags: ["Startup", "Networking", "Mentorship"],
+    organizer: "Prof. Suresh Kumar",
+  },
+  {
+    id: "e005",
+    title: "Inter-College Sports Meet",
+    description:
+      "Annual sports competition featuring cricket, basketball, football, athletics and more. Represent your college and win glory!",
+    date: "2025-03-30",
+    time: "08:00 AM",
+    location: "Sports Complex",
+    category: "Sports",
+    capacity: 300,
+    registered: 245,
+    image: "trophy",
+    status: "upcoming",
+    tags: ["Cricket", "Football", "Athletics"],
+    organizer: "Coach Ramesh T",
+  },
+  {
+    id: "e006",
+    title: "Photography Exhibition",
+    description:
+      "Showcase your photography skills. Submit up to 5 photos on the theme 'Urban Life'. Top entries will be displayed in college gallery.",
+    date: "2025-04-15",
+    time: "03:00 PM",
+    location: "Art Gallery, Block C",
+    category: "Arts",
+    capacity: 100,
+    registered: 43,
+    image: "camera",
+    status: "upcoming",
+    tags: ["Photography", "Art", "Exhibition"],
+    organizer: "Ms. Deepa Singh",
+  },
+];
+
+export const mockRegisteredEvents: RegisteredEvent[] = [
+  {
+    ...mockEvents[0],
+    registeredAt: "2025-03-10",
+    ticketId: "TKT-2025-001",
+    seatNumber: "A-42",
+  },
+  {
+    ...mockEvents[2],
+    registeredAt: "2025-03-08",
+    ticketId: "TKT-2025-002",
+    seatNumber: "B-15",
+  },
+  {
+    ...mockEvents[4],
+    registeredAt: "2025-03-12",
+    ticketId: "TKT-2025-003",
+    seatNumber: "C-07",
+  },
+];
