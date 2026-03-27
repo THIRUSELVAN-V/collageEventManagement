@@ -113,9 +113,9 @@ export default function LoginPage() {
       saveSession(data);
       setSuccess(`Welcome back, ${data.user.username}! Redirectingâ€¦`);
       const portalUrls: Record<string, string> = {
-  student: "http://localhost:3000/dashboard",
-  faculty: "http://localhost:3001/dashboard",
-  admin:   "http://localhost:3002/dashboard",
+  student: "https://collage-event-management-system-student.vercel.app/",
+  faculty: "https://collage-event-management-faculty.vercel.app/",
+  admin:   "https://collage-event-management-system-admin.vercel.app/",
 };
 const redirectUrl = portalUrls[data.user.role?.toLowerCase()] ?? "http://localhost:3000/dashboard";
 setTimeout(() => {
