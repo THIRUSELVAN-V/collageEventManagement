@@ -147,3 +147,17 @@ export const studentStats = {
   completedEvents: 2,
   certificatesEarned: 2,
 };
+
+export const facultyProfile = {
+  name: "Dr. Selvan",
+  title: "Associate Professor",
+  department: "Computer Science & Engineering",
+  employeeId: "FAC-2019-047",
+  email: "selvan@gmail.com",
+  phone: "+91 98765 43210",
+  initials: "PN",
+  eventsCreated: 6,
+  eventsApproved: 2,
+  totalParticipants: 829,
+  rating: 4.8,
+};
